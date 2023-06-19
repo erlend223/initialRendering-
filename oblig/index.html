@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="app.js" type="module" defer></script>
+</head>
+
+<body>
+    <h1>Computer Store</h1>
+
+    <div class="grid-container">
+
+        <!--BANK-->
+        <div class="grid-item bank">
+            <div class="nested-container">
+                <div class="nested-bank title">
+                    <h3 id="bank-title">Joe Banker</h3>
+                </div>
+                <div class="nested-bank balance">
+                    <h5 id="bank-balance">Balance</h5>
+                </div>
+                <div class="nested-bank owed">
+                    <h5 id="loan-owed">Loan</h5>
+                </div>
+                <div class="nested-bank withdraw">
+                    <button id="btn-withdraw">Withdraw</button>
+                </div>
+                <div class="nested-bank deposit">
+                    <button id="btn-deposit">Deposit</button>
+                </div>
+                <div class="nested-bank loan">
+                    <button id="btn-get-loan">Get a loan</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Work-->
+        <div class="grid-item work">
+            <div class="nested-container">
+                
+                <div class="nested-work work-name">
+                    <h2 id="work-title">Work</h2>
+                </div>
+                <div class="nested-work work-earned">
+                    <h3 id="money-earned">Pay</h3>
+                </div>
+                <div class="nested-work work-to-bank">
+                    <button id="btn-send-to-bank">Bank</button>
+                </div>
+
+                <div class="nested-work work-pay-loan">
+                    <button id="btn-pay-loan">Pay Loan</button>
+                </div>
+
+                <div class="nested-work work-earn-money">
+                    <button id="btn-earn-money">Work</button>
+                </div>
+            </div>
+        </div>
+            <!--Laptops select-->
+            <div class="grid-item laptop-sel">
+                <h2 id="laptops-title">Laptops</h2>
+                <h3 id="feature-title">Feature</h3>
+                <p Id="feature-text">"loremipsum"</p>
+                <select name="Available Computers" id="sel-available-computers"></select>
+            </div>
+            <!--Laptops buy-->
+            <div class="grid-item laptop-buy">
+                <h1 id="laptop-name">laptop name</h1>
+                <h3 id="laptop-description">laptop description</h3>
+                <h2 id="laptop-price">laptop price</h2>
+                <button id="btn-buy">BUY NOW</button>
+                <img id="pic-laptop" alt="Failed to load picture of computer">
+            </div>
+        </div>
+    </div>
+</body>

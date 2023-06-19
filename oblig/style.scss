@@ -1,0 +1,151 @@
+$pri-colour: aqua;
+$sec-colour: orangered;
+
+
+@mixin square($size-of-square){
+    height: $size-of-square;
+    width: $size-of-square;
+}
+.square-box{
+    background-color: $pri-colour;
+    color: $sec-colour;
+    @include square(100px)
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px,auto);
+    background-color: #ffffff;
+    padding: 10px;
+  }
+
+.grid-item {
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgba(220, 207, 207, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+.nested-container{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+
+.nested-bank{
+grid-auto-rows: minmax(10px,auto);
+background-color: #ffffff;
+border: #ffffff 5px solid ;
+padding: 2px;
+}
+
+// NESTED BANK
+.title{
+grid-column: 1/3;
+grid-row: 1/2;
+align-self: start;
+}
+
+.balance{
+grid-column: 1/3;
+grid-row: 2/3;
+}
+
+.owed{
+grid-column: 1/3;
+grid-row: 3/4;
+}
+
+.withdraw{
+grid-column: 1/2;
+grid-row: 4/5;
+}
+
+.deposit{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    }
+
+.loan{
+grid-column: 1/3;
+grid-row: 5/6;
+
+}
+
+//NESTED WORK
+
+.work-name{
+    grid-column: 1/3;
+    grid-row:1/2;
+}
+
+.work-earned{
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+.work-pay-loan{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.work-to-bank{
+    grid-column: 1/2;
+    grid-row: 4/6;
+}
+
+.work-earn-money{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-items: end;
+}
+
+
+
+
+#btn-get-loan{
+    background-color: #197533;
+    
+}
+
+#btn-withdraw{
+    background-color: yellow;
+}
+
+button{
+    width: 100%;
+    height: 100%;
+    //background-color: #197533;
+    font-size: 65%;
+    border-radius: 0.5em;
+}
+
+#btn-buy{
+    width: 10%;
+    height: 5%;
+    //background-color: #197533;
+    font-size: 30%;
+    border-radius: 0.5em;
+}
+
+.laptop-buy{
+grid-column: 1 / 4;
+//grid-row: 2/4;
+}
+
+h1{
+color: green;
+}
+
+
+img{
+width: 10em;
+height: 10em;
+}
+
+p{
+font-size: 0.5em;
+}
